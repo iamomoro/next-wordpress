@@ -6,7 +6,14 @@ export default function Home({data}: any) {
 
   const postHtml = data.map((post: any, i: any) => {
     return(
-      <p key={post.id}>{post.title.rendered}</p>
+      <>
+      <div key={post.id}>
+        {post.title.rendered}
+       <p>{post.author}</p>
+       <p>{post.excerpt.rendered}</p>
+      </div>
+     
+      </>
     )
   })
   return (

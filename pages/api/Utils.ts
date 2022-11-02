@@ -21,9 +21,3 @@ export async function getServerSideProps(context: any) {
     };
   }
 
-  function Utils({data}): InferGetServerSidePropsType<typeof getServerSideProps>) {
-    // will resolve data to type Data
-  }
-  
-  
-  export default Utils.
